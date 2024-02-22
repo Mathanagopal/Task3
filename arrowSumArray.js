@@ -1,12 +1,12 @@
-// Sum of all numbers in an array using function
+// Sum of all numbers in an array using arrow function
 
 let arr = [3, 7, 4, 89, 121];
- 
-function sumArray(arr, index) {
+
+const sumArray = (arr, index) => {
     if (index === arr.length) {
         return 0;
     }
     return arr[index] + sumArray(arr, index + 1);
 }
  
-console.log("Sum is " + sumArray(arr, 0)); //Sum is 224
+console.log(sumArray(arr, 0));//Sum is 224

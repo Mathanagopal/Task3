@@ -1,10 +1,11 @@
-//Convert all the strings to title caps in a string array using functions.
+//Convert all the strings to title caps in a string array using arrow functions.
 
-function titleCaps(str) {
+ const myfun = (str) => {
     str = str.toLowerCase().split(' ');
     for (var i = 0; i < str.length; i++) {
       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
     }
     return str.join(' ');
-  };
-  console.log(titleCaps("I am a super man")); //I Am A Super Man
+ };
+console.log(myfun('I am a super man')); //I Am A Super Man
+
